@@ -6,8 +6,12 @@ const cors = require("cors");
 const { connect } = require("http2");
 const PORT = 8008;
 const MongoClient = require("mongodb").MongoClient;
-const connectionString =
-  "mongodb+srv://dinesh:nmzzuk9WT44Wp35Z@cluster0.kfs8mph.mongodb.net/?retryWrites=true&w=majority";
+require("dotenv").config();
+
+let db,
+  dbConnectionString = process.env.DB_String,
+  dbName = "asian-food-api",
+  collection;
 
 // tell express to use cors
 // cors helps with cross domain request to not be blocked
@@ -16,11 +20,11 @@ app.use(cors());
 app.use(express.json());
 
 // this is a promise
-MongoClient.connect(connectionString)
+MongoClient.connect(dbConnectionString)
   .then((client) => {
     console.log(`Connected to DB`);
-    const db = client.db("asian-food-api");
-    const infoCollection = db.collection("dim-sum");
+    db = client.db(dbName);
+    collection = db.collection("dim-sum");
 
     // handle read request for homepage
     app.get("/", (req, res) => {
@@ -38,8 +42,8 @@ MongoClient.connect(connectionString)
         .then((results) => {
           console.log(results);
           // take the response and turn it to JSON
-           // res.json is turning it to JSON what is return it to us (also if you don't turn it to an array it will not come back)
-           // like telling a UPS guy to turn it to JSON and give it to us
+          // res.json is turning it to JSON what is return it to us (also if you don't turn it to an array it will not come back)
+          // like telling a UPS guy to turn it to JSON and give it to us
           res.json(results[0]);
         })
         .catch((error) => console.error(error));
