@@ -8,75 +8,80 @@ const PORT = 8008;
 app.use(cors());
 
 const food = {
-  humans: {
-    speciesName: "Humans",
-    homeworld: "Earth",
-    features: "Rounded ears, hair on head and face (sometimes)",
+  "shrimp dumplings": {
+    hanyuPinyin: "xiā jiǎo",
+    simplifiedName: "虾饺",
+    traditionalName: "蝦餃",
     interestingFact:
-      "Founded the United Federation of Planets after first contact with the Vulcans",
-    notableExamples: "James T. Kirk, Zephram Cochran, Abraham Lincoln",
+      "Shrimp Dumpling is a famous traditional Cantonese dim sum. It originated in a small family-style tea house in Wufeng Township, Wucun, Guangzhou suburb, in the early 20th century. The appearance of Shrimp Dumpling should be crystal-clear, and crescent-shaped with at least 10 folds. It is bite-sized.",
+    ingredients:
+      "With one or two shrimps inside, fillings also have pork and bamboo shoots. So the Shrimp Dumpling features pliable flour wrappers and delicious and smooth fillings.",
     image:
-      "https://static.wikia.nocookie.net/aliens/images/6/68/The_City_on_the_Edge_of_Forever.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/11/03_Har_Gau_Shrimp_Dumplings_-_East_Harbor_Seafood_Palace.jpg",
   },
-  vulcans: {
-    speciesName: "Vulcans",
-    homeworld: "Vulcan",
-    features: "Pointed ears, upward-curving eyebrows",
+  "Barbecued Pork Buns": {
+    hanyuPinyin: "chāshāo bāo",
+    simplifiedName: "叉烧包",
+    traditionalName: "叉燒包",
     interestingFact:
       "Practice an extreme form of emotional regulation that focuses on logic above all else, pioneered by a Vulcan named Surak",
-    notableExamples: "Spock, T'Pol, Sarek",
+    ingredients:
+      "The ingredients are flour, Char Siu the Chinese barbecued pork, oyster oil and other seasonings. Owing to the appropriate fermentation of the dough, the Barbecued Pork Buns crack naturally when steaming, which look like flowers. Normally, the size of Barbecued Pork Buns are about five centimeters in diameter and 3 or 4 of them are served at a time.",
     image:
-      "https://static.wikia.nocookie.net/aliens/images/7/75/Vulcans-FirstContact.jpg",
+      "https://en.wikipedia.org/wiki/Cha_siu_bao#/media/File:Char_siu_bao.jpg",
   },
-  klingons: {
-    speciesName: "Klingons",
-    homeworld: "Qo'noS",
-    features:
-      "Large stature, pronounced ridges on the forehead, stylized facial hair",
+  Shumai: {
+    hanyuPinyin: "shāo mài",
+    simplifiedName: "烧卖",
+    traditionalName: "燒賣",
     interestingFact:
-      "Highly skilled in weapons and battle. Their facial ridges were lost as the result of a virus in 2154, but were subsequently restored by 2269.",
-    notableExamples: "Worf, Kor, Kang",
-    image: "https://static.wikia.nocookie.net/aliens/images/7/74/Kruge.jpg",
+      "They are beautiful and flower-like with thin flour wrappers and fabulous tastes. In addition to Cantonese tea houses, they are basically available at breakfast shops.",
+    ingredients:
+      "There are a variety of fillings including glutinous rice, mushrooms, water chestnut, pork, beef and shrimp.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/2/20/Shrimp_shaomais_by_Stewart_at_Din_Tai_Fung_in_Taipei.jpg",
   },
-  romulans: {
-    speciesName: "Romulans",
-    homeworld: "Romulus",
-    features:
-      "Pointed ears, upward-curving eyebrows,green tinge to the skin, diagonal smooth forehead ridges (sometimes)",
+  "egg tart": {
+    hanyuPinyin: "Daahn tāat",
+    simplifiedName: "蛋挞",
+    traditionalName: "蛋撻",
     interestingFact:
-      "Share a common ancestory with Vulcans, though none of the emotional discipline. Romulus has a sister planet, Remus, on which the Remans are seen as lesser beings.",
-    notableExamples: "Pardek, Tal'aura, Narissa",
-    image: "https://static.wikia.nocookie.net/aliens/images/1/1d/Zzzd7.jpg",
+      "The egg tart started being sold in the early 20th century in Guangzhou (Canton), Guangdong province, inspired by some kinds of European custard tart. Guangzhou's status as the only port accessible to European foreign traders led to the development of Cantonese cuisine having many outside influences.",
+    ingredients:
+      "Egg tart is a kind of Western-style pie with egg pulp as filling. The method is to put the crust into a small bowl-shaped cake mold, then pour into the egg pulp mixed with sugar, and then bake in the oven. The baked egg tart has crisp outer layer and sweet yellow solidified egg pulp inner layer.",
+    image:
+      "https://www.dimsumcentral.com/wp-content/uploads/2018/06/egg-tarts-header-new.jpg",
   },
-  borg: {
-    speciesName: "(The) Borg",
-    homeworld: "unknown (Delta Quadrant)",
-    features:
-      "pale skin, numerous interior and exterior biological modifications",
-    interestingFact:
-      'No single genetic lingeage, species propagates by assimilating individuals via nanotechnology, led by a hive mind guided by a single "queen" individual. DO NOT APPROACH unless under specific diplomatic orders from Starfleet Command.',
-    notableExamples: "Borg Queen, Seven of Nine, Locutus",
-    image: "https://static.wikia.nocookie.net/aliens/images/7/76/Borg.jpg",
+  "Lotus Leaf Rice": {
+    hanyuPinyin: "nuòmǐjī",
+    simplifiedName: "糯米鸡",
+    traditionalName: "糯米雞",
+    interestingFact: "Lo mai gai is mostly a southern Chinese food.",
+    ingredients:
+      "It contains glutinous rice filled with chicken, Chinese mushrooms, Chinese sausage, scallions, and sometimes dried shrimp or salted egg. The ball of rice is then wrapped in a dried lotus leaf and steamed.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/2016_0716_Lo_Mai_Gai.jpg/150px-2016_0716_Lo_Mai_Gai.jpg",
   },
-  gorn: {
-    speciesName: "Gorn",
-    homeworld: "unknown (Alpha Quadrant)",
-    features:
-      "scaly green skin, large, iridescent eyes, powerful build, sharp teeth",
+  "Steamed meatball": {
+    hanyuPinyin: "niúròu wán",
+    simplifiedName: "牛肉丸",
+    traditionalName: "牛肉丸",
     interestingFact:
-      "Extremely militaristic and driven to conquer, but also possess advanced scientific knowledge allowing for superior bio-weapons.",
-    notableExamples: "Gorn Captain",
-    image: "https://static.wikia.nocookie.net/aliens/images/9/9b/Gorn.jpg",
+      "The meatball originated from Muslims during the Tang Dynasty and Song Dynasty. Many Hui Muslims, the descendants of Arab traders, live in Guangzhou.",
+    ingredients:
+      "A layer of tofu skin, or sometimes peas, are used to raise the meatballs from the bottom of the dish and prevent them from sitting in the cooking juices. It is generally served with Worcestershire sauce.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/HK_Pacific_Plaza_SYP_%E5%BE%B7%E9%9F%BE%E8%8B%91_Tak_Hing_Yuen_Seafood_Restaurant_beef_meat_balls_Mar-2013_Bamboo_steamer.JPG/1280px-HK_Pacific_Plaza_SYP_%E5%BE%B7%E9%9F%BE%E8%8B%91_Tak_Hing_Yuen_Seafood_Restaurant_beef_meat_balls_Mar-2013_Bamboo_steamer.JPG",
   },
   trill: {
-    speciesName: "Trill",
-    homeworld: "Trill",
-    features:
-      "Outward appearance similar to humans, aside from distinct dark pigment marks running symmetrically down both sides of the face and body",
-    interestingFact:
-      "Some Trill are willin hosts to a long-lived invertibrate symbiote that merges with the host to create a distinct personality.",
-    notableExamples: "Jadzia Dax, Ezri Dax, Curzon Dax",
-    image: "https://static.wikia.nocookie.net/aliens/images/4/42/EzriDax.jpg",
+    hanyuPinyin: "xiánshuǐ jiǎo",
+    simplifiedName: "鹹水角",
+    traditionalName: "鹹水角",
+    interestingFact: "It's amazing.",
+    ingredients:
+      "Deep fried dumpling with a slightly savory filling of pork and chopped vegetables in a sweet and sticky wrapping",
+    image:
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.r0eAyBRl5K0X1mXf09CbLAHaEK%26pid%3DApi&f=1",
   },
 };
 
