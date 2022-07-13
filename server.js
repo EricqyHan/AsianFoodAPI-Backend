@@ -4,7 +4,6 @@ const { request } = require("http");
 const app = express();
 const cors = require("cors");
 const { connect } = require("http2");
-const PORT = 8008;
 const MongoClient = require("mongodb").MongoClient;
 require("dotenv").config();
 
@@ -52,5 +51,5 @@ MongoClient.connect(dbConnectionString)
   .catch((error) => console.error(error));
 
 app.listen(process.env.PORT || PORT, () => {
-  console.log(`Server is running on ${PORT}`);
+  console.log(`Server is running on port ${process.env.PORT}`);
 });
