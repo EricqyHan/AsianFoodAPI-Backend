@@ -1,5 +1,6 @@
 const { response } = require("express");
 const express = require("express");
+const { request } = require("http");
 const app = express();
 const cors = require("cors");
 const PORT = 8008;
@@ -82,6 +83,16 @@ const food = {
       "Deep fried dumpling with a slightly savory filling of pork and chopped vegetables in a sweet and sticky wrapping",
     image:
       "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.r0eAyBRl5K0X1mXf09CbLAHaEK%26pid%3DApi&f=1",
+  },
+  rice: {
+    hanyuPinyin: "bái fàn",
+    simplifiedName: "白飯",
+    traditionalName: "白飯",
+    interestingFact: "It's amazing.",
+    ingredients:
+      "Deep fried dumpling with a slightly savory filling of pork and chopped vegetables in a sweet and sticky wrapping",
+    image:
+      "https://themom100.com/wp-content/uploads/2015/08/rice-in-bowl-horiz-with-spoon-copy-500x375.jpg",
   },
 };
 
