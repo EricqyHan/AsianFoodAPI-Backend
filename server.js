@@ -29,7 +29,7 @@ const food = {
     ingredients:
       "The ingredients are flour, Char Siu the Chinese barbecued pork, oyster oil and other seasonings. Owing to the appropriate fermentation of the dough, the Barbecued Pork Buns crack naturally when steaming, which look like flowers. Normally, the size of Barbecued Pork Buns are about five centimeters in diameter and 3 or 4 of them are served at a time.",
     image:
-      "https://en.wikipedia.org/wiki/Cha_siu_bao#/media/File:Char_siu_bao.jpg",
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fkeeprecipes.com%2Fsites%2Fkeeprecipes%2Ffiles%2F187043_1419118052_0.jpg&f=1&nofb=1",
   },
   shumai: {
     hanyuPinyin: "shāo mài",
