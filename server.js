@@ -20,7 +20,7 @@ const food = {
     image:
       "https://upload.wikimedia.org/wikipedia/commons/1/11/03_Har_Gau_Shrimp_Dumplings_-_East_Harbor_Seafood_Palace.jpg",
   },
-  "Barbecued Pork Buns": {
+  "barbecued pork buns": {
     hanyuPinyin: "chāshāo bāo",
     simplifiedName: "叉烧包",
     traditionalName: "叉燒包",
@@ -31,7 +31,7 @@ const food = {
     image:
       "https://en.wikipedia.org/wiki/Cha_siu_bao#/media/File:Char_siu_bao.jpg",
   },
-  Shumai: {
+  shumai: {
     hanyuPinyin: "shāo mài",
     simplifiedName: "烧卖",
     traditionalName: "燒賣",
@@ -53,7 +53,7 @@ const food = {
     image:
       "https://www.dimsumcentral.com/wp-content/uploads/2018/06/egg-tarts-header-new.jpg",
   },
-  "Lotus Leaf Rice": {
+  "lotus leaf rice": {
     hanyuPinyin: "nuòmǐjī",
     simplifiedName: "糯米鸡",
     traditionalName: "糯米雞",
@@ -63,7 +63,7 @@ const food = {
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/2016_0716_Lo_Mai_Gai.jpg/150px-2016_0716_Lo_Mai_Gai.jpg",
   },
-  "Steamed meatball": {
+  "steamed meatball": {
     hanyuPinyin: "niúròu wán",
     simplifiedName: "牛肉丸",
     traditionalName: "牛肉丸",
@@ -74,7 +74,7 @@ const food = {
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/HK_Pacific_Plaza_SYP_%E5%BE%B7%E9%9F%BE%E8%8B%91_Tak_Hing_Yuen_Seafood_Restaurant_beef_meat_balls_Mar-2013_Bamboo_steamer.JPG/1280px-HK_Pacific_Plaza_SYP_%E5%BE%B7%E9%9F%BE%E8%8B%91_Tak_Hing_Yuen_Seafood_Restaurant_beef_meat_balls_Mar-2013_Bamboo_steamer.JPG",
   },
-  trill: {
+  "deep fried dumplings": {
     hanyuPinyin: "xiánshuǐ jiǎo",
     simplifiedName: "鹹水角",
     traditionalName: "鹹水角",
